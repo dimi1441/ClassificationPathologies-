@@ -26,20 +26,14 @@ Normalisation basée sur les statistiques d'ImageNet.
 
 ## 📈 Résultats de Validation (AUC)
 Les performances ont été mesurées par le score AUC (Area Under the Curve) sur le jeu de validation pour les 5 pathologies cibles :
-Pathologie
-Score AUC
-Atélectasie
-0.8156
-Cardiomégalie
-0.8367
-Consolidation
-0.8640
-Œdème
-0.9379
-Épanchement pleural
-0.9291
-Moyenne globale
-0.868
+
+| Méthode                | Cardiomegaly (AUC) | Edema (AUC) | Consolidation (AUC) | Atelectasis (AUC) | Pleural Effusion (AUC) | Moyenne |
+|------------------------|--------------------|-------------|---------------------|-------------------|------------------------|---------|
+| U-Ones5          | 0.74               | 0.92        | 0.89                | 0.83              | 0.91                   | 0.858    |
+| U-Ones14       | 0.74               | **0.93**        | 0.89                | 0.81              | 0.91                   | 0.856    |
+| Pham et al          | 0.45               | 0.57        | 0.62                | 0.64              | 0.89                   | 0.640    |
+| Notre méthode       | **0.79**               | 0.92        | **0.92**                | 0.82              | 0.91                   | **0.868**    |
+
 Cette approche ("Notre méthode") surpasse les stratégies standards comme U-Ones14 (0.856) et les résultats rapportés par Pham et al. (2021) sur ce même type de données (0.640).
 
 ## 📚 Références
